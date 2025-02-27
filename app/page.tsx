@@ -1,9 +1,12 @@
-import React from "react";
-import { FaLinkedin, FaEnvelope } from "react-icons/fa";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { BlogPosts } from 'app/components/posts'
 
-const projects = [
+export default function Page() {
+  return (
+    <section>
+      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
+        My Portfolio
+      </h1>
+     const projects = [
   {
     title: "Food & Wellness Guide",
     description:
@@ -70,4 +73,11 @@ export default function Portfolio() {
       </footer>
     </div>
   );
+}
+
+      <div className="my-8">
+        <BlogPosts />
+      </div>
+    </section>
+  )
 }
